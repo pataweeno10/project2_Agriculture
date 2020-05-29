@@ -1,0 +1,9 @@
+DailytempChiangmai_1=DailytempChiangmai.loc[(DailytempChiangmai['YEAR']%4==0)&(DailytempChiangmai['YEAR']>=1994)&(DailytempChiangmai['YEAR']<=2019)&]
+DailytempChiangmai_2=DailytempChiangmai.loc[(DailytempChiangmai['YEAR']%4!=0)&(DailytempChiangmai['YEAR']>=1994)&(DailytempChiangmai['YEAR']<=2019)]
+DailytempChiangrai_1=DailytempChiangrai.loc[(DailytempChiangrai['YEAR']%4==0)&(DailytempChiangrai['YEAR']>=1994)&(DailytempChiangmai['YEAR']<=2019)]
+DailytempChiangrai_2=DailytempChiangrai.loc[(DailytempChiangrai['YEAR']%4!=0)&(DailytempChiangrai['YEAR']>=1994)&(DailytempChiangmai['YEAR']<=2019)]
+########################################################
+DailytempChiangmai_1=DailytempChiangmai_1.loc[DailytempChiangmai_1['MONTH']<=2]
+DailytempChiangmai_2=DailytempChiangmai_2.loc[DailytempChiangmai_2['MONTH']<=2]
+DailytempChiangrai_1=DailytempChiangrai_1.loc[DailytempChiangrai_1['MONTH']<=2]
+DailytempChiangrai_2=DailytempChiangrai_2.loc[DailytempChiangrai_2['MONTH']<=2]
